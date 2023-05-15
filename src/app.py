@@ -61,6 +61,15 @@ btn_0.grid(row=4,column=1)
 btn_cerrar = tkinter.Button(ventana,text=")",command=lambda: agregar_digito(")"))
 btn_cerrar.grid(row=4,column=2)
 
+#botones operaciones numericas
+btn_mas = tkinter.Button(ventana,text="+",command=lambda: agregar_digito("+"))
+btn_mas.grid(row=1,column=3)
+btn_menos = tkinter.Button(ventana,text="-",command=lambda: agregar_digito("-"))
+btn_menos.grid(row=2,column=3)
+btn_por = tkinter.Button(ventana,text="*",command=lambda: agregar_digito("*"))
+btn_por.grid(row=3,column=3)
+btn_div = tkinter.Button(ventana,text="/",command=lambda: agregar_digito("/"))
+btn_div.grid(row=4,column=3)
 
 ventana.mainloop()
 
