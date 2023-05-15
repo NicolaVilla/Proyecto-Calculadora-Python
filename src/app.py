@@ -71,5 +71,10 @@ btn_por.grid(row=3,column=3)
 btn_div = tkinter.Button(ventana,text="/",command=lambda: agregar_digito("/"))
 btn_div.grid(row=4,column=3)
 
+#botones AC y igual
+btn_AC = tkinter.Button(ventana,text="AC",command=limpiar_texto)
+btn_AC.grid(row=5,column=0,columnspan=2)
+btn_igual = tkinter.Button(ventana,text="=",command=evaluar_resultado)
+btn_igual.grid(row=5,column=2,columnspan=2)
 ventana.mainloop()
 
