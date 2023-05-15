@@ -6,6 +6,14 @@ ventana.geometry("300x300")
 text_resultado = tkinter.Text(ventana,height="2",width="16")
 text_resultado.grid(columnspan=5)
 
+resultado = ""
+def agregar_digito(digito):
+    global resultado
+    resultado += str(digito)
+    text_resultado.delete(1.0,"end")
+    text_resultado.insert(1.0,resultado)
+
+
 
 
 
