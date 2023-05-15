@@ -13,8 +13,21 @@ def agregar_digito(digito):
     text_resultado.delete(1.0,"end")
     text_resultado.insert(1.0,resultado)
 
+def evaluar_resultado():
+    global resultado
+    try:
+        resultado = str(eval(resultado))
+        text_resultado.delete(1.0,"end")
+        text_resultado.insert(1.0,resultado)
+    except:
+        limpiar_texto()
+        text_resultado.insert(1.0,"Error")
 
-
+def limpiar_texto():
+    global resultado
+    resultado=""
+    text_resultado.delete(1.0,"end")
+    text_resultado.insert(1.0,resultado)
 
 
 
