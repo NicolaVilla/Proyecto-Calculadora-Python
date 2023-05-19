@@ -75,6 +75,6 @@ btn_div.grid(row=4,column=3)
 btn_AC = tkinter.Button(ventana,text="AC",command=limpiar_texto)
 btn_AC.grid(row=5,column=0,columnspan=2)
 btn_igual = tkinter.Button(ventana,text="=",command=evaluar_resultado)
-btn_igual.grid(row=5,column=2,columnspan=2)
+btn_igual.grid(row=5,column=2,columnspan=3)
 ventana.mainloop()
 
