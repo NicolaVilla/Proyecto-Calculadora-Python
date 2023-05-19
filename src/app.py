@@ -1,4 +1,4 @@
-import tkinter
+
 import customtkinter
 #Ventana principal tkinter
 ventana = customtkinter.CTk()
